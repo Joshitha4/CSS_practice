@@ -5,21 +5,22 @@
 	<title></title>
 	<style type="text/css">
 		.flex {
-			height:100vh;
+			height:33.33vw;
 			display:flex;
+			margin-top: 100px;
 		}
-		.flex .c_square,.c_circle{
-			flex: 0 0 33.3333%;
+		.flex .c-square,.c-circle{
+			flex: 0 0 33.33vw;
 		}
 
-		.c_square{
+		.c-square{
 			display: flex;
 			background-color: GoldenRod;
 			align-items: center;
 			justify-content: center;
 			padding: 0;
 		}
-		.c_circle{
+		.c-circle{
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -29,8 +30,8 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			width:78%;
-			height:52vh;
+			width:calc(33.33vw*0.8);
+			height:calc(33.33vw*0.8);
 			background-color: GoldenRod;
 			border:5px solid black;
 		}
@@ -39,25 +40,25 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			width:calc(100% - 100px);
-			height: calc(100% - 100px);
+			width:calc(33.33vw*0.6);
+			height:calc(33.33vw*0.6);
 			border: 5px solid black;
 		}
 		.third{
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			width:calc(100% - 100px);
-			height: calc(100% - 100px);
+			width:calc(33.33vw*0.4);
+			height:calc(33.33vw*0.4);
 			border: 5px solid black;
 		}
 		.final{
-			width: calc(100% - 100px);
-			height: calc(100% - 100px);
+			width:calc(33.33vw*0.2);
+			height:calc(33.33vw*0.2);
 			border: 5px solid black;
 		}
 
-		.c_circle .first, .c_circle .second, .c_circle .third, .c_circle .final{
+		.circle-properties{
 			background-color: black;
 			border-radius:50%;
 			border-color: GoldenRod;
@@ -65,33 +66,33 @@
 
 	</style>
 </head>
-<body class="flex">
-		<div class="c_square">
-			<div class="first">
-				<div class="second">
-					<div class="third">
-						<div class="final"></div>
+	<body class="flex">
+			<div class="c-square">
+				<div class="first">
+					<div class="second">
+						<div class="third">
+							<div class="final"></div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="c_circle">
-			<div class="first">
-				<div class="second">
-					<div class="third">
-						<div class="final"></div>
+			<div class="c-circle">
+				<div class="first circle-properties">
+					<div class="second circle-properties">
+						<div class="third circle-properties">
+							<div class="final circle-properties"></div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="c_square">
-			<div class="first">
-				<div class="second">
-					<div class="third">
-						<div class="final"></div>
+			<div class="c-square">
+				<div class="first">
+					<div class="second">
+						<div class="third">
+							<div class="final"></div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-</body>
+	</body>
 </html>
